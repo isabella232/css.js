@@ -535,7 +535,7 @@
   */
   fi.prototype.getSpaces = function(num) {
     var ret = '';
-    for (var i = 0; i < num * 4; i++) {
+    for (var i = 0; i < num * 2; i++) {
       ret += ' ';
     }
     return ret;
