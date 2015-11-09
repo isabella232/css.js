@@ -519,6 +519,9 @@
       if (rules[i] === undefined) {
         continue;
       }
+      if( rules[i].value === '' ) {
+        continue;
+      }
       if (rules[i].defective === undefined) {
         ret += this.getSpaces(depth) + rules[i].directive + ': ' + rules[i].value + ';\n';
       } else {
